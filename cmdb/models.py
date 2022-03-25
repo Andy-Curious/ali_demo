@@ -13,6 +13,7 @@ class Host(models.Model):
 
 class CloudHost(models.Model):
     instance_id = models.CharField(max_length=30, verbose_name="实例 id")
+    instance_name = models.CharField(max_length=50, null=True, blank=True, verbose_name="实例名称")
     instance_type = models.CharField(max_length=30, null=True, verbose_name="实例规格")
     instance_type_family = models.CharField(max_length=20, null=True, verbose_name="实例规格组")
     image_id = models.CharField(max_length=60, null=True, verbose_name="实例镜像")

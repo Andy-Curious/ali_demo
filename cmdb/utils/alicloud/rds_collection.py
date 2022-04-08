@@ -54,10 +54,6 @@ def get_region_rds(ali_client, ali_region_id):
 
 if __name__ == '__main__':
 
-    # 认证信息
-    accessKey_id = 'LTAI5tLBwQfqexzQpdBVrbgW'
-    accessKey_secret = 'Az1VubAnsO0wMuN7aUVUNz912gNDAV'
-
     client = create_client(accessKey_id, accessKey_secret)
     region_id_set = get_rds_regions(client)
 
